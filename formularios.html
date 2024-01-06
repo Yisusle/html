@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML 5</title>
+</head>
+<body>
+
+    <h1>Validaciones</h1>
+    <form>
+        <input type="text" required minlength="5" maxlength="15" pattern="[A-Za-z ]+" />
+        <input type="number" required min="5" max="20" />
+
+        <input type="submit" value="Enviar" />
+    </form>
+
+    <h1>Formularios</h1>
+    <form>
+        <fieldset>
+            <legend>Información Personal</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+                </div>    
+
+        
+            <div>    
+                <label for="descripcion">Descripción:</label>
+                <textarea name="" id="descripcion"></textarea>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" />
+            </div>
+
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" />
+            </div>
+
+            <div>
+                <label for="genero">Radio Button:</label>
+                <input type="radio" name="genero" id="hombre" value="Masculino" />
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="mujer" value="Femenino" />
+                <label for="mujer">Mujer</label>
+            </div>
+
+            <div>
+                <label for="">Select:</label>
+                <select name="" id="">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Check Box:</label>
+                <input type="checkbox" /> Mayor de edad
+                <input type="checkbox" /> Menor de edad
+            </div>
+
+            <div>
+                Color:
+                <input type="color" />
+            </div>
+
+            <div>
+                <input type="date" />
+            </div>
+            
+            <div>
+                Ficheros:
+                <input type="file" />
+            </div>
+
+            <div>
+                Imagen:
+                <input type="image" src="imgs/elefante.png" />
+            </div>
+            
+            <div>
+                Oculto:
+                <input type="hidden" name="oculto" value="ocultovich" />
+            </div>
+
+            <div>
+                Numero:
+                <input type="number" />
+            </div>
+
+            <div>
+                Rango:
+                <input type="range">
+            </div>
+
+            <div>
+                Buscar:
+                <input type="search" name="buscar" />
+                <button>Buscar</button>
+            </div>
+
+            <div>
+                Telefono:
+                <input type="tel" name="telefono" />
+            </div>
+
+            <div>
+                Hora:
+                <input type="time" />
+            </div>
+
+            <div>
+                Mes:
+                <input type="month" />
+            </div>
+
+            <div>
+                Sitio web:
+                <input type="url" />
+            </div>
+
+            <div>
+                Barra de Progreso:
+                <progress min="1" max="100" value="45"></progress>
+            </div>
+
+            <div>
+                Meter:
+                <meter min="1" max="100" value="45"></meter>
+            </div>
+
+            <div>
+                Lista de datos:
+                <input list="frutas" name="fruta">
+                <datalist id="frutas">
+                    <option value="Manzana"></option>
+                    <option value="Naranja"></option>
+                    <option value="Cereza"></option>
+                    <option value="Sandia"></option>
+                    <option value="Pera"></option>
+                </datalist>
+            </div>
+
+        </fieldset>
+
+        <!-- <button type="submit">Enviar</button> -->
+        <input type="submit" value="Enviar " />
+
+        <input type="reset" value="Limpiar">
+
+    </form>
+</body>
+</html>
